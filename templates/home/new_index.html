@@ -67,6 +67,7 @@
     <!-- =======================
 Main Banner START -->
     <section class="position-relative overflow-hidden pb-0 pt-xl-9">
+        <img class="position-absolute justify-content-center h-400px opacity-1 " src="{% static 'assets/images/homepage/bg-logo.png' %}">
         <!-- SVG decoration -->
         <div class="position-absolute top-0 start-0 ms-n7 d-none d-xl-block">
             <img src="{% static 'assets/images/elements/decoration-pattern.svg' %}" alt="">
@@ -100,7 +101,8 @@ Main Banner START -->
                         <!-- Title -->
                         <h1 class="mt-3 lh-base">We are experts in
                             <span class="cd-headline clip big-clip is-full-width text-danger mb-0 d-block d-xxl-inline-block">
-							<span class="typed text-danger" data-type-text="Hosting Symposium&&Courses&&Trainings"></span>
+							<span class="typed text-danger"
+                                  data-type-text="Hosting Symposium&&Courses&&Trainings"></span>
 						</span>
                         </h1>
                         <p class="mb-0 mt-4 mt-md-5">Leadership Innovation World (LIW) is dedicated to bridging the gap
@@ -113,7 +115,8 @@ Main Banner START -->
                             <div class="input-group">
                                 <input class="form-control focus-shadow-none border-0 me-1" type="email"
                                        placeholder="Enter your email address">
-                                <button type="button" class="btn btn-dark rounded-2 mb-0">Subscribe  our Newsletter!</button>
+                                <button type="button" class="btn btn-dark rounded-2 mb-0">Subscribe!
+                                </button>
                             </div>
                         </form>
 
@@ -181,34 +184,34 @@ Main Banner START -->
                     <img src="{% static 'assets/images/homepage/homepage.png' %}" class="rounded " alt="hero-img">
 
                     <!-- Visitor box START -->
-{#                    <div class="d-inline-block bg-dark rounded-4 position-absolute start-0 bottom-0 mb-md-4 ms-md-n5 p-3">#}
-{#                        <div class="d-flex align-items-center">#}
-{#                            <h6 class="text-white mb-0 me-2">5K+</h6>#}
-{#                            <ul class="avatar-group mb-0 align-items-center">#}
-{#                                <li class="avatar avatar-xs">#}
-{#                                    <img class="avatar-img rounded-circle"#}
-{#                                         src="{% static 'assets/images/avatar/06.jpg' %}" alt="avatar">#}
-{#                                </li>#}
-{#                                <li class="avatar avatar-xs">#}
-{#                                    <img class="avatar-img rounded-circle"#}
-{#                                         src="{% static 'assets/images/avatar/05.jpg' %}" alt="avatar">#}
-{#                                </li>#}
-{#                                <li class="avatar avatar-xs">#}
-{#                                    <img class="avatar-img rounded-circle"#}
-{#                                         src="{% static 'assets/images/avatar/02.jpg' %}" alt="avatar">#}
-{#                                </li>#}
-{#                                <li class="avatar avatar-xs">#}
-{#                                    <img class="avatar-img rounded-circle"#}
-{#                                         src="{% static 'assets/images/avatar/03.jpg' %}" alt="avatar">#}
-{#                                </li>#}
-{#                                <li class="avatar avatar-xs">#}
-{#                                    <img class="avatar-img rounded-circle"#}
-{#                                         src="{% static 'assets/images/avatar/04.jpg' %}" alt="avatar">#}
-{#                                </li>#}
-{#                            </ul>#}
-{#                        </div>#}
-{#                        <p class="text-white mb-0 mt-2">Total visitors per month</p>#}
-{#                    </div>#}
+                    {#                    <div class="d-inline-block bg-dark rounded-4 position-absolute start-0 bottom-0 mb-md-4 ms-md-n5 p-3">#}
+                    {#                        <div class="d-flex align-items-center">#}
+                    {#                            <h6 class="text-white mb-0 me-2">5K+</h6>#}
+                    {#                            <ul class="avatar-group mb-0 align-items-center">#}
+                    {#                                <li class="avatar avatar-xs">#}
+                    {#                                    <img class="avatar-img rounded-circle"#}
+                    {#                                         src="{% static 'assets/images/avatar/06.jpg' %}" alt="avatar">#}
+                    {#                                </li>#}
+                    {#                                <li class="avatar avatar-xs">#}
+                    {#                                    <img class="avatar-img rounded-circle"#}
+                    {#                                         src="{% static 'assets/images/avatar/05.jpg' %}" alt="avatar">#}
+                    {#                                </li>#}
+                    {#                                <li class="avatar avatar-xs">#}
+                    {#                                    <img class="avatar-img rounded-circle"#}
+                    {#                                         src="{% static 'assets/images/avatar/02.jpg' %}" alt="avatar">#}
+                    {#                                </li>#}
+                    {#                                <li class="avatar avatar-xs">#}
+                    {#                                    <img class="avatar-img rounded-circle"#}
+                    {#                                         src="{% static 'assets/images/avatar/03.jpg' %}" alt="avatar">#}
+                    {#                                </li>#}
+                    {#                                <li class="avatar avatar-xs">#}
+                    {#                                    <img class="avatar-img rounded-circle"#}
+                    {#                                         src="{% static 'assets/images/avatar/04.jpg' %}" alt="avatar">#}
+                    {#                                </li>#}
+                    {#                            </ul>#}
+                    {#                        </div>#}
+                    {#                        <p class="text-white mb-0 mt-2">Total visitors per month</p>#}
+                    {#                    </div>#}
                     <!-- Visitor box END -->
 
                     <!-- Trustpilot review START -->
@@ -295,8 +298,13 @@ Client START -->
 
     <!-- =======================
     Feature START -->
-    <section class=" mt-4 position-relative overflow-hidden" data-bs-theme="light">
+    <section
+            style="
+                    background-color: #76152e" class=" mt-4 position-relative overflow-hidden"
+            data-bs-theme="dark">
 
+        {#        <img src="{% static 'assets/images/homepage/dark-logo.png %}" >#}
+        <img class="position-absolute top-50 justify-content-center h-400px opacity-1 " src="{% static 'assets/images/homepage/dark-logo.png' %}">
         <!-- SVG decoration -->
         <figure class="position-absolute top-0 start-0 mt-n6 ms-n8">
             <svg class="opacity-3" width="371" height="354" viewbox="0 0 371 354" fill="none"
@@ -335,29 +343,31 @@ Client START -->
 		</svg>
         </figure>
 
-        <div class="container pb-6 position-relative">
+        <div class="container position-relative">
             <!-- Title -->
             <div class="inner-container-small text-center mb-4 mb-sm-5">
-                <span class="text-danger fw-bold text-uppercase">Courses</span>
-                <h2 class="mb-0 mt-3">Courses Provided By LIW</h2>
+                <span class="text-white fw-bold text-uppercase">Courses</span>
+                <h2 style="color: #fbd47d" class="mb-0 mt-3">Courses Provided By LIW</h2>
             </div>
 
             <!-- Tabs and content START -->
             <div class="row">
                 <!-- Tabs -->
                 <div class="col-lg-10 col-xl-8 col-xxl-6 mx-auto mb-6 mb-xl-8">
-                    <div style="background-color: #dee4ec" class="rounded-pill p-2">
+                    <div style="background-color: #9a2945" class="rounded-pill p-2">
                         <ul class="nav nav-pills nav-pills-primary nav-responsive justify-content-between"
                             role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link rounded-pill active" id="pills-analytics-tab"
+                                <button style="color: #fbd47d" class="nav-link rounded-pill active"
+                                        id="pills-analytics-tab"
                                         data-bs-toggle="pill" data-bs-target="#pills-analytics" type="button" role="tab"
                                         aria-controls="pills-analytics" aria-selected="true"><i
                                         class="bi bi-person me-2"></i>For Students
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link rounded-pill" id="pills-startup-tab" data-bs-toggle="pill"
+                                <button style="color: #fbd47d" class="nav-link rounded-pill" id="pills-startup-tab"
+                                        data-bs-toggle="pill"
                                         data-bs-target="#pills-startup" type="button" role="tab"
                                         aria-controls="pills-startup" aria-selected="false" tabindex="-1"><i
                                         class="bi bi-briefcase me-2"></i>For Start-ups
@@ -366,14 +376,16 @@ Client START -->
                             <li class="nav-item position-relative" role="presentation">
                                 <!-- Badge -->
                                 <span class="badge text-bg-danger position-absolute top-0 start-100 translate-middle mt-n2 ms-n5 d-none d-lg-block">Coming soon</span>
-                                <button class="nav-link rounded-pill" id="pills-collaboration-tab" data-bs-toggle="pill"
+                                <button style="color: #fbd47d" class="nav-link rounded-pill"
+                                        id="pills-collaboration-tab" data-bs-toggle="pill"
                                         data-bs-target="#pills-collaboration" type="button" role="tab"
                                         aria-controls="pills-collaboration" aria-selected="false" tabindex="-1"><i
                                         class="bi bi-book me-2"></i>For Teachers
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link rounded-pill" id="pills-scalability-tab" aria-selected="false"
+                                <button style="color: #fbd47d" class="nav-link rounded-pill" id="pills-scalability-tab"
+                                        aria-selected="false"
                                         tabindex="-1" role="tab"><i class="bi bi-pie-chart me-2"></i>For Head Teachers
                                 </button>
                             </li>
@@ -390,8 +402,9 @@ Client START -->
                             <div class="row align-items-center">
                                 <!-- Info -->
                                 <div class="col-lg-6 mb-6 mb-lg-0">
-                                    <span class="bg-danger bg-opacity-10 text-danger text-uppercase rounded small px-3 py-2">For Students</span>
-                                    <h3 class="my-4">Comprehensive write up for students</h3>
+                                    <span style="background-color: #9a2945"
+                                          class="bg-opacity-10 text-white text-uppercase rounded small px-3 py-2">For Students</span>
+                                    <h3 style="color: #fbd47d" class="my-4">Comprehensive write up for students</h3>
                                     <p>Gain valuable insights into your digital campaigns with our comprehensive data
                                         analytics and reporting.</p>
                                     <!-- List -->
@@ -410,7 +423,8 @@ Client START -->
                                         </li>
                                     </ul>
                                     <!-- Button -->
-                                    <a style="background-color: #a1a1a1" class="btn btn-light icon-link icon-link-hover"
+                                    <a style="background-color: #fcc346"
+                                       class="btn btn-light border-0 icon-link icon-link-hover"
                                        href="#">Explore all courses for
                                         Students<i
                                                 class="bi bi-arrow-right"></i></a>
@@ -422,12 +436,13 @@ Client START -->
                                     <div class="accordion accordion-icon accordion-icon-start accordion-bg-light"
                                          id="accordionFaq">
                                         <!-- Item -->
-                                        <div class="accordion-item mb-3">
-                                            <div class="accordion-header font-base" id="heading-1">
-                                                <button class="accordion-button fw-semibold rounded collapsed ps-6"
+                                        <div style="border-color: #9a2945" class="accordion-item mb-3">
+                                            <div style="background-color: #9a2945" class="accordion-header font-base"
+                                                 id="heading-1">
+                                                <button class="accordion-button btn-danger fw-semibold rounded collapsed ps-6"
                                                         type="button"
                                                 >
-                                                    <a style="color: #606261" href="{% url 'symposium' %}">
+                                                    <a style="color: #fbd47d" href="{% url 'symposium' %}">
                                                         Courses in Leadership and Management
                                                     </a>
                                                 </button>
@@ -939,7 +954,6 @@ Client START -->
                         </div>
 
 
-
                     </div>
                 </div>
             </div>
@@ -959,7 +973,8 @@ Services START -->
                 <div class="col-lg-4 mb-5">
                     <div data-sticky="" data-margin-top="80" data-sticky-for="576">
                         <h2 class="mb-4 text-danger">Our Approach to Success</h2>
-                        <p class="mb-4 text-black">With the support of our result-driven team, you can solve many challenges.</p>
+                        <p class="mb-4 text-black">With the support of our result-driven team, you can solve many
+                            challenges.</p>
                         <div style="background-color: #daa353" class="text-center d-inline-block rounded px-5 py-3">
                             <span class="text-black">Skill Now?</span>
                             <a class="ms-2 text-danger" href="#">Explore courses<span
@@ -994,7 +1009,8 @@ Services START -->
                                 <div class="card-body p-0">
                                     <h5 style="color: #daa353" class="mb-3">Personalized
                                         Learning Experience</h5>
-                                    <p class="mb-0 text-black">We tailor our programs to meet your specific needs, ensuring that
+                                    <p class="mb-0 text-black">We tailor our programs to meet your specific needs,
+                                        ensuring that
                                         you gain practical skills that can be immediately applied in real-world
                                         scenarios.
                                     </p>
@@ -1027,7 +1043,8 @@ Services START -->
                                     <h5 style="color: #daa353" class="mb-3">Industry-Driven
                                         Curriculum
                                     </h5>
-                                    <p class="mb-0 text-black"> Our courses are developed in collaboration with industry experts,
+                                    <p class="mb-0 text-black"> Our courses are developed in collaboration with industry
+                                        experts,
                                         ensuring that you learn what is most relevant to today's job market.</p>
                                 </div>
                             </div>
@@ -1093,7 +1110,8 @@ Services START -->
                                 <div class="card-body p-0">
                                     <h5 style="color: #daa353" class="mb-3">Continuous
                                         Support and Guidance</h5>
-                                    <p class="mb-0 text-black">Our team of experienced mentors is dedicated to supporting you
+                                    <p class="mb-0 text-black">Our team of experienced mentors is dedicated to
+                                        supporting you
                                         throughout your learning journey, offering personalized feedback and advice to
                                         help you succeed.
                                     </p>
@@ -1126,7 +1144,8 @@ Services START -->
                                 <div class="card-body p-0">
                                     <h5 style="color: #daa353" class="mb-3">Global Networking
                                         Opportunities</h5>
-                                    <p class="mb-0 text-black">As a member of MLE℠, you’ll have access to a global network of
+                                    <p class="mb-0 text-black">As a member of MLE℠, you’ll have access to a global
+                                        network of
                                         professionals, leaders, and experts, providing you with unparalleled
                                         opportunities for growth and collaboration.
                                     </p>
@@ -1154,7 +1173,8 @@ Services START -->
 
                                 <div class="card-body p-0">
                                     <h5 style="color: #daa353" class="mb-3">Engaging Symposiums</h5>
-                                    <p class="mb-0 text-black">We conduct symposiums where students connect with industry
+                                    <p class="mb-0 text-black">We conduct symposiums where students connect with
+                                        industry
                                         leaders, participate in interactive sessions, and gain insights from the
                                         forefront of their fields.
                                     </p>
@@ -1203,7 +1223,8 @@ Core feature START -->
                     <div class="card card-body bg-transparent text-center p-0">
                         <span style="color: #541523" class="h4"><i class="bi bi-linkedin "></i></span>
                         <h6 style="color: #daa353" class="mb-2">Prestigious LinkedIn Badge</h6>
-                        <p class="mb-0 text-black">You will receive a LinkedIn badge that highlights your achievement, making your
+                        <p class="mb-0 text-black">You will receive a LinkedIn badge that highlights your achievement,
+                            making your
                             profile stand out to recruiters and peers.
                         </p>
                     </div>
@@ -1214,7 +1235,8 @@ Core feature START -->
                     <div class="card card-body bg-transparent text-center p-0">
                         <span style="color: #541523" class="h4"><i class="bi bi-person-vcard"></i></span>
                         <h6 style="color: #daa353" class="mb-2">Unique ID on Certificates</h6>
-                        <p class="mb-0 text-black">Each certificate you earn comes with a unique ID, ensuring its authenticity and
+                        <p class="mb-0 text-black">Each certificate you earn comes with a unique ID, ensuring its
+                            authenticity and
                             making it easily verifiable.
                         </p>
                     </div>
@@ -1225,7 +1247,8 @@ Core feature START -->
                     <div class="card card-body bg-transparent text-center p-0">
                         <span style="color: #541523" class="h4"><i class="bi bi-people"></i></span>
                         <h6 style="color: #daa353" class="mb-2">Membership in MLE℠</h6>
-                        <p class="mb-0 text-black"> Join the prestigious Members of Leaders Excellence℠. This exclusive membership
+                        <p class="mb-0 text-black"> Join the prestigious Members of Leaders Excellence℠. This exclusive
+                            membership
                             connects you with a global
                             network of professionals and leaders.</p>
                     </div>
@@ -1258,7 +1281,8 @@ Core feature START -->
                     <div class="card card-body bg-transparent text-center p-0">
                         <span style="color: #541523" class="h4"><i class="bi bi-bullseye"></i></span>
                         <h6 style="color: #daa353" class="mb-2">Dual Mode Training</h6>
-                        <p class="mb-0 text-black">Experience the flexibility of both online and offline training sessions. Our
+                        <p class="mb-0 text-black">Experience the flexibility of both online and offline training
+                            sessions. Our
                             courses are about immersing yourself in the learning
                             process.</p>
                     </div>
